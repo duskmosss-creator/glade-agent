@@ -72,20 +72,31 @@ The agent communicates by "reading" your Gmail inbox and "replying" via SMTP.
 
 ---
 
-## 🧠 4. AI Backend Setup
+## 🧠 4. AI Backend Options & Model Selection
 
-The agent is a "brain-optional" system—it needs a local API to talk to.
+The Glade Agent is a "brain-optional" system—it needs a local API to talk to. Here are the supported backends and recommended models for various hardware.
 
-### Option A: LM Studio (Recommended for Beginners)
-1.  Download [LM Studio](https://lmstudio.ai/).
-2.  Search for and download a model (e.g., `Llama-3.2-3B-Instruct`).
-3.  Go to the **Local Server** tab (↔️ icon).
-4.  Click **Start Server**.
-5.  In `settings.json`, set your provider to `lmstudio` and the URL to `http://localhost:1234/v1/chat/completions`.
+### A. Backend Providers
 
-### Option B: Lemonade (Recommended for Low-Resource)
-1.  Run the `wiki_agent_service/serve_wiki_agent.bat` script.
-2.  This starts a lightweight API server specifically optimized for the Glade environment.
+| Backend | Best For... | Features |
+| :--- | :--- | :--- |
+| **LM Studio** | Beginners / GUI | Easiest setup, one-click server, visual model browsing. |
+| **AnythingLLM** | Power Users | Supports **Web Search** and **RAG** (chatting with your own docs). |
+| **Lemonade** | Low Resources | Included in this repo. Ultra-lightweight and optimized for Glade. |
+| **Ollama** | Headless / CLI | High performance, runs as a background service. |
+
+### B. Recommended Models (Text)
+
+For the best balance of speed and intelligence on consumer hardware:
+
+*   **Llama-3.2-3B-Instruct** (Recommended): The gold standard for 8GB-16GB RAM. Fast, smart, and handles SMS brevity well.
+*   **Qwen2.5-7B-Instruct**: More powerful reasoning. Requires 16GB+ RAM but provides much deeper answers.
+*   **Phi-3.5-mini**: Extremely fast. Ideal for older hardware or very high-latency connections.
+
+### C. Vision Model (Required for !identify)
+
+To use the plant/object identification feature, you need a Vision-Language Model (VLM):
+*   **Qwen2-VL-8B-Instruct**: The best-performing open-source vision model for identification tasks.
 
 ---
 
@@ -102,10 +113,15 @@ Rename `config/settings.json.example` to `settings.json` and update these keys:
   },
   "ai_backend": {
     "provider": "lmstudio", 
-    "zim_path": "C:\\Data\\wikipedia.zim"
+    "zim_path": "C:\\Data\\wikipedia.zim",
+    "model_name": "llama-3.2-3b-instruct" 
   }
 }
 ```
+
+> [!NOTE]
+> If using **LM Studio**, ensure the "Local Server" tab is active and the port (usually `1234`) matches your config. If using **Ollama**, the default port is `11434`.
+
 
 ---
 
