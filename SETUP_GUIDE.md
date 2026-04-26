@@ -87,18 +87,13 @@ When you start the Glade Agent, you will be prompted to select one of four backe
 | **3. Wiki Agent (Lemonade)** | Hybrid | Uses Lemonade for chat and Wikipedia integration. |
 | **4. Wiki Agent (LM Studio)**| Hybrid | Uses LM Studio for chat and Wikipedia integration. |
 
-### B. Recommended Models (Text)
+### B. Required Models
 
-For the best balance of speed and intelligence on consumer hardware, search for the **GGUF** versions of these models (we recommend versions quantized to `Q4_K_M` or `Q5_K_M`):
+To match the built-in startup options, you will need the following models downloaded in your respective backends:
 
-*   **Llama-3.2-3B-Instruct** (Recommended): The gold standard for 8GB-16GB RAM. Fast, smart, and handles SMS brevity well. Search term: `bartowski/Llama-3.2-3B-Instruct-GGUF`.
-*   **Qwen2.5-7B-Instruct**: More powerful reasoning. Requires 16GB+ RAM but provides much deeper answers. Search term: `Qwen/Qwen2.5-7B-Instruct-GGUF`.
-*   **Phi-3.5-mini-instruct**: Extremely fast. Ideal for older hardware or very high-latency connections. Search term: `microsoft/Phi-3.5-mini-instruct-GGUF`.
-
-### C. Vision Model (Required for !identify)
-
-To use the plant/object identification feature, you need a Vision-Language Model (VLM):
-*   **Qwen2-VL-8B-Instruct**: The best-performing open-source vision model for identification tasks. Search term: `Qwen/Qwen2-VL-8B-Instruct-GGUF` (or use the built-in LM Studio vision models).
+*   **Qwen3-VL-8B**: The primary model used when running via **LM Studio** (Options 1 and 4). It handles both high-intelligence text chat and vision tasks (for the `!identify` command).
+*   **Llama-3.2-1B-FLM**: An ultra-lightweight model used when running the pure **Lemonade** backend (Option 2). Ideal for very low-resource hardware.
+*   **Qwen3-8b-FLM**: The primary model used when running the **Wiki Agent** via Lemonade (Option 3), providing the intelligence needed to parse offline Wikipedia data.
 
 ---
 
