@@ -44,12 +44,13 @@ Send an image of a plant to the agent; it uses Vision-Language models to provide
 - **Gmail Account**: With an App Password enabled (acts as the SMS bridge).
 - **Local AI Backend**: LM Studio or Lemonade running an OpenAI-compatible API.
 
-### 2. Quick Start
-1. Download the **[v1.0 Release ZIP](https://github.com/duskmosss-creator/glade-agent/releases)**.
-2. Extract and navigate to `config/`.
-3. Rename `settings.json.example` to `settings.json` and enter your Gmail and AI details.
-4. Run `pip install -r requirements.txt`.
-5. Start the agent: `agents/run_glade_agent.bat`.
+### 2. Configure the Agent
+1. Download the latest Release ZIP.
+2. Read the **[Full Setup Guide](SETUP_GUIDE.md)** for detailed instructions on dependencies and Wikipedia storage.
+3. Go to the `config/` directory.
+4. Rename `settings.json.example` to `settings.json` and enter your Gmail and AI details.
+5. Run `pip install -r requirements.txt`.
+6. Start the agent: `agents/run_glade_agent.bat`.
 
 ### 3. Activating your SMS Thread
 1. Send a text to your Google Voice number.
