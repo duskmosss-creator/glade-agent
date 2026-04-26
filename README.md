@@ -1,91 +1,76 @@
-# Glade Agent
+# Glade Agent: Low-Bandwidth Digital Autonomy
 
-**Glade Agent** is a lightweight, low-bandwidth AI backend service that enables users to interact with large language models, fetch real-time weather/radar data, identify plants, and query Wikipedia entirely over SMS or local network tools instead of a heavy web interface.
+**Glade Agent** is an autonomous, low-bandwidth communication bridge that brings modern AI capabilities and high-fidelity data retrieval to environments with limited or no internet access. 
 
-Built to be resilient and accessible in off-grid or low-connectivity scenarios, Glade Agent bridges modern AI systems with simple text communication.
-
----
-
-## 🚀 Features
-
-- **Conversational AI via SMS:** Connects to powerful Local AI backends (AnythingLLM, LM Studio, Ollama, etc.) to securely answer questions.
-- **Live Weather & Forecasts:** Fetch current weather conditions and granular forecasts by sending `!weather <location>`.
-- **Weather Radar Generation:** Generate both static images and animated GIF loops of local weather radar using `!radar <location>`.
-- **Offline Wikipedia Search:** Search an offline local Wikipedia database to retrieve encyclopedic knowledge without internet access.
-- **Plant ID:** Send an image of a plant and the agent will use Vision-Language models to identify it in seconds.
-- **Stateless/Offline Reliability:** If connections drop, the agent safely logs history and intelligently resumes answering accumulated messages when it comes back online.
+By utilizing standard SMS and MMS messaging, the Glade Agent allows users to interact with local AI models, fetch real-time weather radar, and access encyclopedic knowledge without ever needing a web browser or a stable data connection.
 
 ---
 
-## 🛠️ Plug and Play Setup
+## 🛰️ The Low-Bandwidth Mission
 
-Getting the Glade Agent running is simple:
+In off-grid, emergency, or remote scenarios, bandwidth is a luxury. Modern web interfaces are heavy, trackers are everywhere, and simple tasks require megabytes of data. 
 
-### 1. Configure the Agent
-1. Clone or download the repository.
-2. Go to the `config/` directory.
-3. Rename `settings.json.example` to `settings.json`.
-4. Open `settings.json` and plug in your details:
-   - **Your Gmail Address & App Password** (Used to bridge the SMS interactions).
-   - **AI Backend Details** (Select your provider and add your API Key/URL).
-
-### 2. Install Dependencies
-Ensure you have Python 3.9+ installed. Run the following command in the project directory:
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the Agent
-On Windows, navigate to the `agents/` folder and double-click the start script:
-- **Glade Agent (SMS)**: `agents/run_glade_agent.bat`
-- **Wiki Agent (Research)**: `agents/run_wiki_agent.bat`
-
-The agent will initialize, perform a system check, connect to your local AI instance, and begin monitoring for commands.
-
-### 4. Activate your Text Thread
-Because the agent monitors a specific Gmail label, you must "hand off" your text thread to it:
-1. Send a text to your associated Google Voice/SMS number.
-2. Open Gmail and find the incoming email for that text.
-3. Apply the label `off-grid-agent` (or whatever you set in `settings.json`) to the **entire thread**.
-4. The agent will now automatically pick up and respond to all future messages in that thread!
+**Glade Agent** solves this by:
+- **Minimizing Data**: A single text message (a few bytes) can trigger a complex AI query or fetch a detailed radar map.
+- **MMS Optimization**: Images are processed and compressed on your local server, then delivered directly to your phone via carrier MMS gateways.
+- **Digital Autonomy**: Keep your intelligence local. All AI processing happens on your hardware (using LM Studio, Lemonade, or Ollama).
+- **Resilient Delivery**: Smart message splitting ensures your AI's answers arrive intact, even on restrictive carrier networks.
 
 ---
 
-## 📝 Commands Reference
+## 🚀 Core Features
 
-You can text these commands to your agent's associated number:
-- `!weather <location>`: Get current weather + high-fidelity forecast (Humidity, Wind, Gusts).
-- `!forecast <location>`: Fetch a detailed hourly trend graph/data.
-- `!radar <location> <miles>`: Receive a weather radar static map. Add `gif` to the end for an animated radar loop.
-- `!temp-history <location>`: View the past 24-hour temperature trend from local observations.
-- `!wiki <query>`: Direct lookup in the offline Wikipedia database.
-- `!research <topic>`: Trigger a multi-step autonomous investigation with a PDF report.
-- `!identify`: Send an image to identify a plant or object.
-- `!info`: View system information and the basic help menu.
-- `!check`: Run a backend diagnostic to ensure all models and services are online.
-- `!clear`: Clear your conversation history with the AI.
+### 1. Conversational AI via SMS
+Connect your agent to a local LLM. Text a question, and receive a response directly in your SMS thread. Perfect for troubleshooting, medical advice, or just offline intelligence.
 
-> [!TIP]
-> **Intelligent Sensing**: The weather system now uses strict word matching and an ignore list. It won't trigger randomly if you mention "photos" or "cameras" in a normal conversation!
+### 2. High-Fidelity Weather Radar
+Request live radar for any location with `!radar <location>`. 
+- **Static Maps**: High-contrast, easy-to-read radar images.
+- **Animated GIFs**: Loops showing storm movement, delivered as MMS or secure cloud links.
+- **Smart Routing**: Automatically detects your carrier (Verizon, AT&T, etc.) to ensure attachments bypass standard SMS filters.
 
----
+### 3. Detailed Forecasts & Trends
+Beyond simple temperatures, get granular NOAA-sourced data including wind gusts, humidity, and 24-hour historical temperature trends to track incoming fronts.
 
-## 🧠 Supported AI Backends
-The Glade Agent is extremely flexible and can be hooked up to almost any text-generation backend:
-- **AnythingLLM** (Default)
-- **LM Studio** 
-- **Ollama** 
-- **OpenAI Compatible endpoints**
-
-You can switch models immediately on startup or define them persistently in `settings.json`.
+### 4. Plant Identification
+Send an image of a plant to the agent; it uses Vision-Language models to provide an identification and care summary within seconds.
 
 ---
 
-## ⚠️ Requirements
-- Python 3.9+
-- A Google Voice account tied to a Gmail inbox (for SMS bridging)
-- (Optional) An active local AI service running Llama 3 or similar
-- (Optional) SQLite3 for local conversation tracking
+## 🛠️ Setup Guide
 
-## 📜 License
-This software is provided under open-source terms. Feel free to fork, modify, and improve the Glade Agent for your own low-bandwidth automation setups.
+### 1. Prerequisites
+- **Python 3.10+**
+- **Gmail Account**: With an App Password enabled (acts as the SMS bridge).
+- **Local AI Backend**: LM Studio or Lemonade running an OpenAI-compatible API.
+
+### 2. Quick Start
+1. Download the **[v1.0 Release ZIP](https://github.com/duskmosss-creator/glade-agent/releases)**.
+2. Extract and navigate to `config/`.
+3. Rename `settings.json.example` to `settings.json` and enter your Gmail and AI details.
+4. Run `pip install -r requirements.txt`.
+5. Start the agent: `agents/run_glade_agent.bat`.
+
+### 3. Activating your SMS Thread
+1. Send a text to your Google Voice number.
+2. In Gmail, find the resulting email and label the thread as `off-grid-agent`.
+3. The agent will now own that thread and respond to all future texts.
+
+---
+
+## 📝 Commands
+
+| Command | Action |
+| --- | --- |
+| `!weather <loc>` | Current conditions + 12h forecast |
+| `!radar <loc> [gif]` | Static or animated radar map |
+| `!forecast <loc>` | Detailed hourly trend data |
+| `!temp-history <loc>` | 24-hour temperature graph |
+| `!info` | System status and help menu |
+| `!check` | Diagnostic check of all backends |
+| `!clear` | Reset AI conversation history |
+
+---
+
+## 📜 Privacy & License
+Glade Agent is open-source and privacy-focused. No personal data, location data, or conversation history is ever sent to third-party servers. All links are enforced over HTTPS.
