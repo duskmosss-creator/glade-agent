@@ -76,14 +76,16 @@ The agent communicates by "reading" your Gmail inbox and "replying" via SMTP.
 
 The Glade Agent is a "brain-optional" system—it needs a local API to talk to. Here are the supported backends and recommended models for various hardware.
 
-### A. Backend Providers
+### A. Backend Providers & Startup Options
 
-| Backend | Best For... | Features |
+When you start the Glade Agent, you will be prompted to select one of four backend modes:
+
+| Mode | Backend Focus | Best For... |
 | :--- | :--- | :--- |
-| **LM Studio** | Beginners / GUI | Easiest setup, one-click server, visual model browsing. |
-| **AnythingLLM** | Power Users | Supports **Web Search** and **RAG** (chatting with your own docs). |
-| **Lemonade** | Low Resources | Included in this repo. Ultra-lightweight and optimized for Glade. |
-| **Ollama** | Headless / CLI | High performance, runs as a background service. |
+| **1. LM Studio** | Pure LM Studio | Visual model browsing, easy GUI setup, and fast chat. |
+| **2. Lemonade** | Pure Lemonade | Ultra-lightweight headless server, best for low-resource hardware. |
+| **3. Wiki Agent (Lemonade)** | Hybrid | Uses Lemonade for chat and Wikipedia integration. |
+| **4. Wiki Agent (LM Studio)**| Hybrid | Uses LM Studio for chat and Wikipedia integration. |
 
 ### B. Recommended Models (Text)
 
