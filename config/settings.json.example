@@ -1,0 +1,70 @@
+{
+  "email": {
+    "address": "your_email@gmail.com",
+    "app_password": "your_app_password",
+    "gmail_label": "off-grid-agent"
+  },
+  "ai_backend": {
+    "provider": "wiki_agent_lemonade",
+    "anythingllm": {
+      "workspace_slug": "glade-automation",
+      "api_key": "YOUR_API_KEY_HERE",
+      "url": "http://localhost:3001"
+    },
+    "lmstudio": {
+      "url": "http://127.0.0.1:1234/v1/chat/completions",
+      "model": "local-model",
+      "default_model": "local-model",
+      "video_model": "local-model"
+    },
+    "lemonade": {
+      "url": "http://localhost:8000/api/v1/chat/completions",
+      "model": "Llama-3.2-1B-FLM",
+      "plant_id_model": "Qwen3-8b-FLM"
+    },
+    "fast_flow": {
+      "url": "http://localhost:52625/v1/chat/completions",
+      "model": "local-model"
+    },
+    "wiki_agent": {
+      "description": "Autonomous Wikipedia Researcher (Uses Lemonade/FastFlow backend)",
+      "zim_path": "C:\\path\\to\\your\\wikipedia.zim",
+      "lemonade_model": "Qwen3-8b-FLM",
+      "lmstudio_model": "local-model"
+    },
+    "cloud_storage": {
+      "provider": "transfersh"
+    }
+  },
+  "weather": {
+    "user_agent": "glade-agent",
+    "cache_minutes": 10,
+    "max_cache_size": 100
+  },
+  "performance": {
+    "imap_idle_timeout": 30,
+    "max_retries": 5,
+    "base_retry_delay": 30,
+    "rate_limit_window": 20,
+    "max_burst": 4,
+    "duplicate_window": 60
+  },
+  "features": {
+    "delayed_response_enabled": true,
+    "respond_to_offline_messages": false
+  },
+  "timeouts": {
+    "lmstudio": 300,
+    "anythingllm": 600,
+    "weather_api": 120,
+    "lemonade": 300,
+    "fast_flow": 300
+  },
+  "plant_id": {
+    "method": "specialized",
+    "model_file": "plant_yolov8s.pt"
+  },
+  "wiki_agent": {
+    "zim_path": "C:\\path\\to\\your\\wikipedia.zim"
+  }
+}

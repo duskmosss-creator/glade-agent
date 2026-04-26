@@ -1,0 +1,1089 @@
+Deep Benchmark: ibm/granite-4-h-tiny
+Config: 1 Iterations | 80 Max Searches | 8 Forced Cycles
+
+--- ITERATION 1 ---
+   [Bench] PHASE 1: Initial Planning...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Plan: ['1. Mothman', '2. Point Pleasant', 'West Virginia', '3. Scarberry Sighting', '4. Robert Mallette', '5. Mary Hyre', '6. Chief Cornstalk Curse', '7. Mothman Festival']
+
+   [Bench] --- CYCLE 1 (Queue: 8) ---
+   [WikiAgent] Searching index for '1. Mothman'...
+   [WikiAgent] No results for '1. Mothman'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman']
+   [WikiAgent] Found keyword title match: Mothman
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [1] 1. Mothman: KEPT
+   [Bench]    -> Immediate Lead: 2. Eyewitness Accounts of Mothman Sightings
+   [WikiAgent] Searching index for '2. Point Pleasant'...
+   [WikiAgent] No results for '2. Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [2] 2. Point Pleasant: KEPT
+   [WikiAgent] Found exact title match: West Virginia
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [3] West Virginia: KEPT
+   [Bench]    -> Immediate Lead: Mothman Legend and Its Cultural Impact in Point Pleasant, West Virginia
+   [WikiAgent] Searching index for '3. Scarberry Sighting'...
+   [WikiAgent] No results for '3. Scarberry Sighting'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Scarberry', 'Sighting']
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Sighting
+   [WikiAgent] Redirecting: Scarberry → Mark S. Scarberry
+   [WikiAgent] Redirecting: Sighting → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [4] 3. Scarberry Sighting: KEPT
+   [Bench]    -> Immediate Lead: 4. Mallette Sighting
+   [WikiAgent] Searching index for '4. Robert Mallette'...
+   [WikiAgent] No results for '4. Robert Mallette'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Robert', 'Mallette']
+   [WikiAgent] Found keyword title match: Robert
+   [WikiAgent] Found keyword title match: Mallette
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [5] 4. Robert Mallette: KEPT
+   [Bench]    -> Immediate Lead: 5. Economic Impact of Mothman Festival in Point Pleasant
+   [WikiAgent] Searching index for '5. Mary Hyre'...
+   [WikiAgent] No results for '5. Mary Hyre'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [6] 5. Mary Hyre: KEPT
+   [Bench]    -> Immediate Lead: 6. Chief Cornstalk Curse
+   [WikiAgent] Searching index for '6. Chief Cornstalk Curse'...
+   [WikiAgent] No results for '6. Chief Cornstalk Curse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Chief', 'Cornstalk', 'Curse']
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: Curse
+   [WikiAgent] Redirecting: Cornstalk → Corn stalk
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [7] 6. Chief Cornstalk Curse: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant During the 1960s
+   [WikiAgent] Searching index for '7. Mothman Festival'...
+   [WikiAgent] No results for '7. Mothman Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Festival']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [8] 7. Mothman Festival: KEPT
+   [Bench]    -> Immediate Lead: 8. Mothman Festival
+   [WikiAgent] Searching index for '2. Eyewitness Accounts of Mothman Sightings'...
+   [WikiAgent] No results for '2. Eyewitness Accounts of Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [9] 2. Eyewitness Accounts of Mothman Sightings: KEPT
+   [Bench]    -> Immediate Lead: 3. Mallette's Role in Mothman Investigations
+   [WikiAgent] Searching index for 'Mothman Legend and Its Cultural Impact in Point Pleasant, West Virginia'...
+   [WikiAgent] No results for 'Mothman Legend and Its Cultural Impact in Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Legend', 'Its', 'Cultural', 'Impact', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [10] Mothman Legend and Its Cultural Impact in Point Pleasant, West Virginia: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia
+   [Bench] End of Cycle 1. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Study Of Point Pleasant\'S Cultural History', '2. "Mothman Sightings And Paranormal Investigations: An Analysis Of Eyewitness Testimonies And Scientific Perspectives', '3. "Economic Implications Of The Mothman Legend On Point Pleasant', 'West Virginia: From Tourism To Local Identity']
+
+   [Bench] --- CYCLE 2 (Queue: 11) ---
+   [WikiAgent] Searching index for '4. Mallette Sighting'...
+   [WikiAgent] No results for '4. Mallette Sighting'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mallette', 'Sighting']
+   [WikiAgent] Found keyword title match: Mallette
+   [WikiAgent] Found keyword title match: Sighting
+   [WikiAgent] Redirecting: Sighting → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [11] 4. Mallette Sighting: KEPT
+   [Bench]    -> Immediate Lead: 5. Eyewitness Accounts of Mothman Sightings
+   [WikiAgent] Searching index for '5. Economic Impact of Mothman Festival in Point Pleasant'...
+   [WikiAgent] No results for '5. Economic Impact of Mothman Festival in Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Festival', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [12] 5. Economic Impact of Mothman Festival in Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies and its Influence on Point Pleasant's Tourism
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant During the 1960s'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant During the 1960s'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'During', '1960s']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [13] Mothman Sightings in Point Pleasant During the 1960s: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s
+   [WikiAgent] Searching index for '8. Mothman Festival'...
+   [WikiAgent] No results for '8. Mothman Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Festival']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [14] 8. Mothman Festival: KEPT
+   [Bench]    -> Immediate Lead: 9. Economic Impact of Mothman Sightings
+   [WikiAgent] Searching index for '3. Mallette's Role in Mothman Investigations'...
+   [WikiAgent] No results for '3. Mallette's Role in Mothman Investigations'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ["Mallette's", 'Role', 'Mothman', 'Investigations']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Investigations
+   [WikiAgent] Redirecting: Investigations → Investigation
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [15] 3. Mallette's Role in Mothman Investigations: KEPT
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [16] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967
+   [WikiAgent] Searching index for '1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Study Of Point Pleasant'S Cultural History'...
+   [WikiAgent] No results for '1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Study Of Point Pleasant'S Cultural History'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"The', 'Role', 'Local', 'Folklore', 'Shaping', 'Mothman', 'Mythos:', 'Study', 'Point', "Pleasant'S", 'Cultural', 'History']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: History
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [17] 1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Study Of Point Pleasant'S Cultural History: KEPT
+   [WikiAgent] Searching index for '2. "Mothman Sightings And Paranormal Investigations: An Analysis Of Eyewitness Testimonies And Scientific Perspectives'...
+   [WikiAgent] No results for '2. "Mothman Sightings And Paranormal Investigations: An Analysis Of Eyewitness Testimonies And Scientific Perspectives'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Mothman', 'Sightings', 'Paranormal', 'Investigations:', 'Analysis', 'Eyewitness', 'Testimonies', 'Scientific', 'Perspectives']
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Paranormal
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Testimonies
+   [WikiAgent] Found keyword title match: Scientific
+   [WikiAgent] Found keyword title match: Perspectives
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [18] 2. "Mothman Sightings And Paranormal Investigations: An Analysis Of Eyewitness Testimonies And Scientific Perspectives: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings and Paranormal Investigations: An Analysis of Eyewitness Testimonies and Scientific Perspectives
+   [WikiAgent] Searching index for '3. "Economic Implications Of The Mothman Legend On Point Pleasant'...
+   [WikiAgent] No results for '3. "Economic Implications Of The Mothman Legend On Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Economic', 'Implications', 'Mothman', 'Legend', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Implications
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Implications → Implication
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [19] 3. "Economic Implications Of The Mothman Legend On Point Pleasant: Discarded
+   [WikiAgent] Searching index for 'West Virginia: From Tourism To Local Identity'...
+   [WikiAgent] No results for 'West Virginia: From Tourism To Local Identity'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['West', 'Virginia:', 'From', 'Tourism', 'Local', 'Identity']
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: From
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Identity
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [20] West Virginia: From Tourism To Local Identity: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies: Fact or Fiction?
+   [Bench] End of Cycle 2. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. The Role Of Local Folklore And Mythology In Shaping Mothman Legend: A Comparative Study With Other Cryptid Phenomena', '2. Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond', '3. Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon']
+
+   [Bench] --- CYCLE 3 (Queue: 10) ---
+   [WikiAgent] Searching index for '5. Eyewitness Accounts of Mothman Sightings'...
+   [WikiAgent] No results for '5. Eyewitness Accounts of Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [21] 5. Eyewitness Accounts of Mothman Sightings: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant (1966-1967) - Scarberry/Mallette, Journalist Mary Hyre, and Chief Cornstalk Curse.
+   [WikiAgent] Searching index for 'The Mothman Prophecies and its Influence on Point Pleasant's Tourism'...
+   [WikiAgent] No results for 'The Mothman Prophecies and its Influence on Point Pleasant's Tourism'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies', 'its', 'Influence', 'Point', "Pleasant's", 'Tourism']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Prophecies
+   [WikiAgent] Found keyword title match: its
+   [WikiAgent] Found keyword title match: Influence
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Redirecting: Prophecies → Prophecy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [22] The Mothman Prophecies and its Influence on Point Pleasant's Tourism: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman Sightings in Point Pleasant's Economic Growth
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'During', '1960s']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [23] Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette
+   [WikiAgent] Searching index for '9. Economic Impact of Mothman Sightings'...
+   [WikiAgent] No results for '9. Economic Impact of Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [24] 9. Economic Impact of Mothman Sightings: KEPT
+   [Bench]    -> Immediate Lead: 10. Mothman Festival and its Economic Impact
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', 'During', '1966-1967']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [25] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967" - Focus on Scarberry/Mallette accounts and journalist Mary Hyre.
+   [WikiAgent] Searching index for 'Mothman Sightings and Paranormal Investigations: An Analysis of Eyewitness Testimonies and Scientific Perspectives'...
+   [WikiAgent] No results for 'Mothman Sightings and Paranormal Investigations: An Analysis of Eyewitness Testimonies and Scientific Perspectives'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Paranormal', 'Investigations:', 'Analysis', 'Eyewitness', 'Testimonies', 'Scientific', 'Perspectives']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Paranormal
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Testimonies
+   [WikiAgent] Found keyword title match: Scientific
+   [WikiAgent] Found keyword title match: Perspectives
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [26] Mothman Sightings and Paranormal Investigations: An Analysis of Eyewitness Testimonies and Scientific Perspectives: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism
+   [WikiAgent] Searching index for 'The Mothman Prophecies: Fact or Fiction?'...
+   [WikiAgent] No results for 'The Mothman Prophecies: Fact or Fiction?'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies:', 'Fact', 'Fiction?']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Fact
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [27] The Mothman Prophecies: Fact or Fiction?: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)
+   [WikiAgent] Searching index for '1. The Role Of Local Folklore And Mythology In Shaping Mothman Legend: A Comparative Study With Other Cryptid Phenomena'...
+   [WikiAgent] No results for '1. The Role Of Local Folklore And Mythology In Shaping Mothman Legend: A Comparative Study With Other Cryptid Phenomena'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Local', 'Folklore', 'Mythology', 'Shaping', 'Mothman', 'Legend:', 'Comparative', 'Study', 'With', 'Other', 'Cryptid', 'Phenomena']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Mythology
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Comparative
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: With
+   [WikiAgent] Found keyword title match: Other
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Phenomena
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [28] 1. The Role Of Local Folklore And Mythology In Shaping Mothman Legend: A Comparative Study With Other Cryptid Phenomena: KEPT
+   [Bench]    -> Immediate Lead: 2. Mothman Sightings and Paranormal Phenomena in Point Pleasant, West Virginia
+   [WikiAgent] Searching index for '2. Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'...
+   [WikiAgent] No results for '2. Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Analysis', 'Tourism', 'Boosts', 'Linked', 'Cryptid', 'Sightings:', 'Case', 'Studies', 'From', 'Point', 'Pleasant', 'Beyond']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Linked
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Studies
+   [WikiAgent] Found keyword title match: From
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Beyond
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [29] 2. Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies: A Study of Cryptid Sightings and Their Impact on Local Economies
+   [WikiAgent] Searching index for '3. Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon'...
+   [WikiAgent] No results for '3. Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Psychological', 'Perspectives', 'Mass', 'Hysteria', 'Collective', 'Delusion:', 'Mothman', 'Phenomenon', 'Cultural', 'Phenomenon']
+   [WikiAgent] Found keyword title match: Psychological
+   [WikiAgent] Found keyword title match: Perspectives
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Hysteria
+   [WikiAgent] Found keyword title match: Collective
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Redirecting: Psychological → Psychology
+   [WikiAgent] Redirecting: Perspectives → Perspective
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [30] 3. Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Phenomenon and Mass Hysteria: A Psychological Analysis
+   [Bench] End of Cycle 3. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Comparative Study With Other Cryptid Phenomena', '2. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond', '3. "Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon']
+
+   [Bench] --- CYCLE 4 (Queue: 13) ---
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant (1966-1967) - Scarberry/Mallette, Journalist Mary Hyre, and Chief Cornstalk Curse.'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant (1966-1967) - Scarberry/Mallette, Journalist Mary Hyre, and Chief Cornstalk Curse.'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', '(1966-1967)', 'Scarberry/Mallette', 'Journalist', 'Mary', 'Hyre', 'Chief', 'Cornstalk', 'Curse.']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Journalist
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [31] Eyewitness Accounts of Mothman Sightings in Point Pleasant (1966-1967) - Scarberry/Mallette, Journalist Mary Hyre, and Chief Cornstalk Curse.: KEPT
+   [WikiAgent] Searching index for 'The Role of Mothman Sightings in Point Pleasant's Economic Growth'...
+   [WikiAgent] No results for 'The Role of Mothman Sightings in Point Pleasant's Economic Growth'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Economic', 'Growth']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Growth
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [32] The Role of Mothman Sightings in Point Pleasant's Economic Growth: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Cultural Identity and Tourism
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'During', '1960s"', 'Eyewitness', 'Reports', 'from', 'Scarberry', 'Mallette']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Reports
+   [WikiAgent] Found keyword title match: from
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Mallette
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [33] Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette. Also, consider searching for "Mothman Curse: The Legend of Chief Cornstalk".
+   [WikiAgent] Searching index for '10. Mothman Festival and its Economic Impact'...
+   [WikiAgent] No results for '10. Mothman Festival and its Economic Impact'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['10.', 'Mothman', 'Festival', 'its', 'Economic', 'Impact']
+   [WikiAgent] Found keyword title match: 10.
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: its
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Redirecting: 10. → 10
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [34] 10. Mothman Festival and its Economic Impact: KEPT
+   [Bench]    -> Immediate Lead: The Legend of Mothman and its Cultural Impact in Point Pleasant
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967" - Focus on Scarberry/Mallette accounts and journalist Mary Hyre.'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967" - Focus on Scarberry/Mallette accounts and journalist Mary Hyre.'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', 'During', '1966-1967"', 'Focus', 'Scarberry/Mallette', 'accounts', 'journalist', 'Mary', 'Hyre.']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Found keyword title match: Focus
+   [WikiAgent] Found keyword title match: accounts
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [35] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967" - Focus on Scarberry/Mallette accounts and journalist Mary Hyre.: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967 - Focus on Scarberry/Mallette accounts and journalist Mary Hyre
+   [WikiAgent] Searching index for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism'...
+   [WikiAgent] No results for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Economy', 'Tourism']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economy
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [36] The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman in Point Pleasant's Cultural Identity and Local Folklore
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '(1966-1967)']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [37] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967): KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967) - Eyewitness Testimony and Psychological Impact
+   [WikiAgent] Searching index for '2. Mothman Sightings and Paranormal Phenomena in Point Pleasant, West Virginia'...
+   [WikiAgent] No results for '2. Mothman Sightings and Paranormal Phenomena in Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Paranormal', 'Phenomena', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Paranormal
+   [WikiAgent] Found keyword title match: Phenomena
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [38] 2. Mothman Sightings and Paranormal Phenomena in Point Pleasant, West Virginia: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Economy and Culture
+   [WikiAgent] Searching index for 'The Mothman Prophecies: A Study of Cryptid Sightings and Their Impact on Local Economies'...
+   [WikiAgent] No results for 'The Mothman Prophecies: A Study of Cryptid Sightings and Their Impact on Local Economies'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies:', 'Study', 'Cryptid', 'Sightings', 'Their', 'Impact', 'Local', 'Economies']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Economies
+   [WikiAgent] Redirecting: Cryptid → List of cryptids
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [39] The Mothman Prophecies: A Study of Cryptid Sightings and Their Impact on Local Economies: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman Sightings in Shaping Point Pleasant's Cultural Identity and Tourism
+   [WikiAgent] Searching index for 'The Mothman Phenomenon and Mass Hysteria: A Psychological Analysis'...
+   [WikiAgent] No results for 'The Mothman Phenomenon and Mass Hysteria: A Psychological Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Phenomenon', 'Mass', 'Hysteria:', 'Psychological', 'Analysis']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Psychological
+   [WikiAgent] Found keyword title match: Analysis
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [40] The Mothman Phenomenon and Mass Hysteria: A Psychological Analysis: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mass Hysteria in the Mothman Phenomenon
+   [Bench] End of Cycle 4. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. "The Role Of Cryptid Sightings In Shaping Local Economies: A Comparative Analysis Of Point Pleasant And Other American Folklore Sites', '2. "Psychological Aspects Of Mass Hysteria: An In-Depth Study Of The Mothman Phenomenon And Its Sociocultural Implications', '3. "From Myth To Mainstream: The Evolution Of Cryptid Legends In Popular Culture', "With A Focus On Point Pleasant'S Mothman"]
+
+   [Bench] --- CYCLE 5 (Queue: 16) ---
+   [WikiAgent] Searching index for '1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Comparative Study With Other Cryptid Phenomena'...
+   [WikiAgent] No results for '1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Comparative Study With Other Cryptid Phenomena'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"The', 'Role', 'Local', 'Folklore', 'Shaping', 'Mothman', 'Mythos:', 'Comparative', 'Study', 'With', 'Other', 'Cryptid', 'Phenomena']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Comparative
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: With
+   [WikiAgent] Found keyword title match: Other
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Phenomena
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [41] 1. "The Role Of Local Folklore In Shaping Mothman Mythos: A Comparative Study With Other Cryptid Phenomena: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings and Their Impact on Point Pleasant's Economy
+   [WikiAgent] Searching index for '2. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'...
+   [WikiAgent] No results for '2. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Economic', 'Analysis', 'Tourism', 'Boosts', 'Linked', 'Cryptid', 'Sightings:', 'Case', 'Studies', 'From', 'Point', 'Pleasant', 'Beyond']
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Linked
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Studies
+   [WikiAgent] Found keyword title match: From
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Beyond
+   [WikiAgent] Redirecting: Linked → Link
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [42] 2. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings and Their Impact on Point Pleasant's Economy
+   [WikiAgent] Searching index for '3. "Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon'...
+   [WikiAgent] No results for '3. "Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Psychological', 'Perspectives', 'Mass', 'Hysteria', 'Collective', 'Delusion:', 'Mothman', 'Phenomenon', 'Cultural', 'Phenomenon']
+   [WikiAgent] Found keyword title match: Perspectives
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Hysteria
+   [WikiAgent] Found keyword title match: Collective
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Redirecting: Perspectives → Perspective
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [43] 3. "Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon: Discarded
+   [WikiAgent] Searching index for 'The Impact of Mothman Sightings on Point Pleasant's Cultural Identity and Tourism'...
+   [WikiAgent] No results for 'The Impact of Mothman Sightings on Point Pleasant's Cultural Identity and Tourism'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Cultural', 'Identity', 'Tourism']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Identity
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [44] The Impact of Mothman Sightings on Point Pleasant's Cultural Identity and Tourism: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman in Point Pleasant's Economic Development
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette. Also, consider searching for "Mothman Curse: The Legend of Chief Cornstalk".'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette. Also, consider searching for "Mothman Curse: The Legend of Chief Cornstalk".'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'During', '1960s"', 'Eyewitness', 'Reports', 'from', 'Scarberry', 'Mallette.', 'Also', 'consider', 'searching', '"Mothman', 'Curse:', 'Legend', 'Chief', 'Cornstalk".']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Reports
+   [WikiAgent] Found keyword title match: from
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Also
+   [WikiAgent] Found keyword title match: consider
+   [WikiAgent] Found keyword title match: searching
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [45] Eyewitness Accounts of Mothman Sightings in Point Pleasant During the 1960s" - Eyewitness Reports from Scarberry and Mallette. Also, consider searching for "Mothman Curse: The Legend of Chief Cornstalk".: KEPT
+   [WikiAgent] Searching index for 'The Legend of Mothman and its Cultural Impact in Point Pleasant'...
+   [WikiAgent] No results for 'The Legend of Mothman and its Cultural Impact in Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Legend', 'Mothman', 'its', 'Cultural', 'Impact', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: its
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [46] The Legend of Mothman and its Cultural Impact in Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman in Point Pleasant's Economic Development
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967 - Focus on Scarberry/Mallette accounts and journalist Mary Hyre'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967 - Focus on Scarberry/Mallette accounts and journalist Mary Hyre'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', 'During', '1966-1967', 'Focus', 'Scarberry/Mallette', 'accounts', 'journalist', 'Mary', 'Hyre']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Found keyword title match: Focus
+   [WikiAgent] Found keyword title match: accounts
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [47] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia During 1966-1967 - Focus on Scarberry/Mallette accounts and journalist Mary Hyre: KEPT
+   [WikiAgent] Searching index for 'The Role of Mothman in Point Pleasant's Cultural Identity and Local Folklore'...
+   [WikiAgent] No results for 'The Role of Mothman in Point Pleasant's Cultural Identity and Local Folklore'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Mothman', 'Point', "Pleasant's", 'Cultural', 'Identity', 'Local', 'Folklore']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Identity
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [48] The Role of Mothman in Point Pleasant's Cultural Identity and Local Folklore: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism Industry
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967) - Eyewitness Testimony and Psychological Impact'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967) - Eyewitness Testimony and Psychological Impact'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '(1966-1967)', 'Eyewitness', 'Testimony', 'Psychological', 'Impact']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Testimony
+   [WikiAgent] Found keyword title match: Psychological
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [49] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia (1966-1967) - Eyewitness Testimony and Psychological Impact: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Testimony and Psychological Impact of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)
+   [WikiAgent] Searching index for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Culture'...
+   [WikiAgent] No results for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Culture'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Economy', 'Culture']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economy
+   [WikiAgent] Found keyword title match: Culture
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [50] The Impact of Mothman Sightings on Point Pleasant's Economy and Culture: KEPT
+   [Bench] End of Cycle 5. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. "The Mothman Phenomenon: Cryptid Sightings', 'Local Folklore', 'And Economic Impact In Point Pleasant', '2. "Eyewitness Accounts Of Mothman Sightings During The 1960S: A Comparative Analysis With Other Cryptid Phenomena', '3. "Mothman Curse: The Legend Of Chief Cornstalk And Its Influence On Point Pleasant\'S Cultural Identity']
+
+   [Bench] --- CYCLE 6 (Queue: 17) ---
+   [WikiAgent] Searching index for 'The Role of Mothman Sightings in Shaping Point Pleasant's Cultural Identity and Tourism'...
+   [WikiAgent] No results for 'The Role of Mothman Sightings in Shaping Point Pleasant's Cultural Identity and Tourism'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Mothman', 'Sightings', 'Shaping', 'Point', "Pleasant's", 'Cultural', 'Identity', 'Tourism']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Identity
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [51] The Role of Mothman Sightings in Shaping Point Pleasant's Cultural Identity and Tourism: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman on Point Pleasant's Local Economy and Community Development
+   [WikiAgent] Searching index for 'The Role of Mass Hysteria in the Mothman Phenomenon'...
+   [WikiAgent] No results for 'The Role of Mass Hysteria in the Mothman Phenomenon'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Mass', 'Hysteria', 'Mothman', 'Phenomenon']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Hysteria
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Phenomenon
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [52] The Role of Mass Hysteria in the Mothman Phenomenon: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings and Mass Hysteria in Point Pleasant, West Virginia
+   [WikiAgent] Searching index for '1. "The Role Of Cryptid Sightings In Shaping Local Economies: A Comparative Analysis Of Point Pleasant And Other American Folklore Sites'...
+   [WikiAgent] No results for '1. "The Role Of Cryptid Sightings In Shaping Local Economies: A Comparative Analysis Of Point Pleasant And Other American Folklore Sites'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"The', 'Role', 'Cryptid', 'Sightings', 'Shaping', 'Local', 'Economies:', 'Comparative', 'Analysis', 'Point', 'Pleasant', 'Other', 'American', 'Folklore', 'Sites']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Comparative
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Other
+   [WikiAgent] Found keyword title match: American
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Sites
+   [WikiAgent] Redirecting: Cryptid → List of cryptids
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [53] 1. "The Role Of Cryptid Sightings In Shaping Local Economies: A Comparative Analysis Of Point Pleasant And Other American Folklore Sites: Discarded
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for '2. "Psychological Aspects Of Mass Hysteria: An In-Depth Study Of The Mothman Phenomenon And Its Sociocultural Implications'...
+   [WikiAgent] No results for '2. "Psychological Aspects Of Mass Hysteria: An In-Depth Study Of The Mothman Phenomenon And Its Sociocultural Implications'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Psychological', 'Aspects', 'Mass', 'Hysteria:', 'In-Depth', 'Study', 'Mothman', 'Phenomenon', 'Its', 'Sociocultural', 'Implications']
+   [WikiAgent] Found keyword title match: Aspects
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Phenomenon
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Sociocultural
+   [WikiAgent] Found keyword title match: Implications
+   [WikiAgent] Redirecting: Aspects → Aspect
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [54] 2. "Psychological Aspects Of Mass Hysteria: An In-Depth Study Of The Mothman Phenomenon And Its Sociocultural Implications: KEPT
+   [WikiAgent] Searching index for '3. "From Myth To Mainstream: The Evolution Of Cryptid Legends In Popular Culture'...
+   [WikiAgent] No results for '3. "From Myth To Mainstream: The Evolution Of Cryptid Legends In Popular Culture'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"From', 'Myth', 'Mainstream:', 'Evolution', 'Cryptid', 'Legends', 'Popular', 'Culture']
+   [WikiAgent] Found keyword title match: Myth
+   [WikiAgent] Found keyword title match: Evolution
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Legends
+   [WikiAgent] Found keyword title match: Popular
+   [WikiAgent] Found keyword title match: Culture
+   [WikiAgent] Redirecting: Cryptid → List of cryptids
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [55] 3. "From Myth To Mainstream: The Evolution Of Cryptid Legends In Popular Culture: KEPT
+   [Bench]    -> Immediate Lead: 4. The Mothman Prophecies: Fact, Fiction, and the Point Pleasant Phenomenon
+   [WikiAgent] Searching index for 'With A Focus On Point Pleasant'S Mothman'...
+   [WikiAgent] No results for 'With A Focus On Point Pleasant'S Mothman'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['With', 'Focus', 'Point', "Pleasant'S", 'Mothman']
+   [WikiAgent] Found keyword title match: With
+   [WikiAgent] Found keyword title match: Focus
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Mothman
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [56] With A Focus On Point Pleasant'S Mothman: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings and Paranormal Phenomena in Point Pleasant
+   [WikiAgent] Searching index for 'Mothman Sightings and Their Impact on Point Pleasant's Economy'...
+   [WikiAgent] No results for 'Mothman Sightings and Their Impact on Point Pleasant's Economy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Their', 'Impact', 'Point', "Pleasant's", 'Economy']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economy
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [WikiAgent] Redirecting: Their → They
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [57] Mothman Sightings and Their Impact on Point Pleasant's Economy: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant
+   [WikiAgent] Searching index for 'The Role of Mothman in Point Pleasant's Economic Development'...
+   [WikiAgent] No results for 'The Role of Mothman in Point Pleasant's Economic Development'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Role', 'Mothman', 'Point', "Pleasant's", 'Economic', 'Development']
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Development
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [58] The Role of Mothman in Point Pleasant's Economic Development: KEPT
+   [Bench]    -> Immediate Lead: The Impact of Mothman Sightings on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism Industry'...
+   [WikiAgent] No results for 'The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Economy', 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economy
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [59] The Impact of Mothman Sightings on Point Pleasant's Economy and Tourism Industry: KEPT
+   [WikiAgent] Searching index for 'Eyewitness Testimony and Psychological Impact of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)'...
+   [WikiAgent] No results for 'Eyewitness Testimony and Psychological Impact of Mothman Sightings in Point Pleasant, West Virginia (1966-1967)'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Testimony', 'Psychological', 'Impact', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '(1966-1967)']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Testimony
+   [WikiAgent] Found keyword title match: Psychological
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Psychological → Psychology
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [60] Eyewitness Testimony and Psychological Impact of Mothman Sightings in Point Pleasant, West Virginia (1966-1967): KEPT
+   [Bench]    -> Immediate Lead: Psychological Effects of Mothman Sightings on Eyewitnesses in Point Pleasant, West Virginia (1966-1967)
+   [Bench] End of Cycle 6. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['1. "The Mothman Phenomenon: A Comparative Analysis Of Cryptid Sightings In Point Pleasant And Their Sociocultural Implications', '2. "Mothman Curse: The Legend Of Chief Cornstalk - Folklore', 'Mythology', 'And Local Impact', '3. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond']
+
+   [Bench] --- CYCLE 7 (Queue: 18) ---
+   [WikiAgent] Searching index for '1. "The Mothman Phenomenon: Cryptid Sightings'...
+   [WikiAgent] No results for '1. "The Mothman Phenomenon: Cryptid Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"The', 'Mothman', 'Phenomenon:', 'Cryptid', 'Sightings']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Cryptid → List of cryptids
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [61] 1. "The Mothman Phenomenon: Cryptid Sightings: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies: A Connection to the Silver Bridge Collapse
+   [WikiAgent] Found exact title match: Local folklore
+   [WikiAgent] Redirecting: Local folklore → Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [62] Local Folklore: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies and Point Pleasant's Tourism Boom
+   [WikiAgent] Searching index for 'And Economic Impact In Point Pleasant'...
+   [WikiAgent] No results for 'And Economic Impact In Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [63] And Economic Impact In Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings and Their Impact on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for '2. "Eyewitness Accounts Of Mothman Sightings During The 1960S: A Comparative Analysis With Other Cryptid Phenomena'...
+   [WikiAgent] No results for '2. "Eyewitness Accounts Of Mothman Sightings During The 1960S: A Comparative Analysis With Other Cryptid Phenomena'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'During', '1960S:', 'Comparative', 'Analysis', 'With', 'Other', 'Cryptid', 'Phenomena']
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: During
+   [WikiAgent] Found keyword title match: Comparative
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: With
+   [WikiAgent] Found keyword title match: Other
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Phenomena
+   [WikiAgent] Redirecting: Accounts → Account
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [64] 2. "Eyewitness Accounts Of Mothman Sightings During The 1960S: A Comparative Analysis With Other Cryptid Phenomena: KEPT
+   [Bench]    -> Immediate Lead: The Mothman Prophecies: Exploring the Paranormal Connections and Economic Impact of a Cryptid Phenomenon
+   [WikiAgent] Searching index for '3. "Mothman Curse: The Legend Of Chief Cornstalk And Its Influence On Point Pleasant'S Cultural Identity'...
+   [WikiAgent] No results for '3. "Mothman Curse: The Legend Of Chief Cornstalk And Its Influence On Point Pleasant'S Cultural Identity'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Mothman', 'Curse:', 'Legend', 'Chief', 'Cornstalk', 'Its', 'Influence', 'Point', "Pleasant'S", 'Cultural', 'Identity']
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Influence
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Identity
+   [WikiAgent] Redirecting: Cornstalk → Corn stalk
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [65] 3. "Mothman Curse: The Legend Of Chief Cornstalk And Its Influence On Point Pleasant'S Cultural Identity: KEPT
+   [Bench]    -> Immediate Lead: 4. "Mothman and the Scarberry Incident: Eyewitness Accounts of a Phenomenon
+   [WikiAgent] Searching index for 'The Impact of Mothman on Point Pleasant's Local Economy and Community Development'...
+   [WikiAgent] No results for 'The Impact of Mothman on Point Pleasant's Local Economy and Community Development'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Point', "Pleasant's", 'Local', 'Economy', 'Community', 'Development']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Economy
+   [WikiAgent] Found keyword title match: Community
+   [WikiAgent] Found keyword title match: Development
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [66] The Impact of Mothman on Point Pleasant's Local Economy and Community Development: KEPT
+   [WikiAgent] Searching index for 'Mothman Sightings and Mass Hysteria in Point Pleasant, West Virginia'...
+   [WikiAgent] No results for 'Mothman Sightings and Mass Hysteria in Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Mass', 'Hysteria', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Mass
+   [WikiAgent] Found keyword title match: Hysteria
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [67] Mothman Sightings and Mass Hysteria in Point Pleasant, West Virginia: KEPT
+   [WikiAgent] Searching index for 'The Impact of Mothman Sightings on Point Pleasant's Tourism Industry'...
+   [WikiAgent] No results for 'The Impact of Mothman Sightings on Point Pleasant's Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [68] The Impact of Mothman Sightings on Point Pleasant's Tourism Industry: KEPT
+   [WikiAgent] Searching index for '4. The Mothman Prophecies: Fact, Fiction, and the Point Pleasant Phenomenon'...
+   [WikiAgent] No results for '4. The Mothman Prophecies: Fact, Fiction, and the Point Pleasant Phenomenon'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies:', 'Fact', 'Fiction', 'Point', 'Pleasant', 'Phenomenon']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Fact
+   [WikiAgent] Found keyword title match: Fiction
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Phenomenon
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [69] 4. The Mothman Prophecies: Fact, Fiction, and the Point Pleasant Phenomenon: KEPT
+   [Bench]    -> Immediate Lead: 5. The Economic Impact of Mothman Sightings on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for 'Mothman Sightings and Paranormal Phenomena in Point Pleasant'...
+   [WikiAgent] No results for 'Mothman Sightings and Paranormal Phenomena in Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Paranormal', 'Phenomena', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Paranormal
+   [WikiAgent] Found keyword title match: Phenomena
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [70] Mothman Sightings and Paranormal Phenomena in Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant
+   [Bench] End of Cycle 7. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] Expansion Leads: ['2. "Psychological Perspectives On Mass Hysteria And Collective Delusion: The Mothman Phenomenon As A Cultural Phenomenon', '3. "From Myth To Mainstream: The Evolution Of Cryptid Legends In Popular Culture With A Focus On The Mothman Legend']
+
+   [Bench] --- CYCLE 8 (Queue: 17) ---
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [71] Eyewitness Accounts of Mothman Sightings in Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant During 1966-1967
+   [WikiAgent] Searching index for 'Psychological Effects of Mothman Sightings on Eyewitnesses in Point Pleasant, West Virginia (1966-1967)'...
+   [WikiAgent] No results for 'Psychological Effects of Mothman Sightings on Eyewitnesses in Point Pleasant, West Virginia (1966-1967)'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Psychological', 'Effects', 'Mothman', 'Sightings', 'Eyewitnesses', 'Point', 'Pleasant', 'West', 'Virginia', '(1966-1967)']
+   [WikiAgent] Found keyword title match: Psychological
+   [WikiAgent] Found keyword title match: Effects
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Eyewitnesses
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Psychological → Psychology
+   [WikiAgent] Redirecting: Effects → Effect
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [72] Psychological Effects of Mothman Sightings on Eyewitnesses in Point Pleasant, West Virginia (1966-1967): KEPT
+   [Bench]    -> Immediate Lead: The Role of Folklore and Myth in the Mothman Phenomenon
+   [WikiAgent] Searching index for '1. "The Mothman Phenomenon: A Comparative Analysis Of Cryptid Sightings In Point Pleasant And Their Sociocultural Implications'...
+   [WikiAgent] No results for '1. "The Mothman Phenomenon: A Comparative Analysis Of Cryptid Sightings In Point Pleasant And Their Sociocultural Implications'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"The', 'Mothman', 'Phenomenon:', 'Comparative', 'Analysis', 'Cryptid', 'Sightings', 'Point', 'Pleasant', 'Their', 'Sociocultural', 'Implications']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Comparative
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Sociocultural
+   [WikiAgent] Found keyword title match: Implications
+   [WikiAgent] Redirecting: Comparative → Degrees of comparison of adjectives and adverbs
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [73] 1. "The Mothman Phenomenon: A Comparative Analysis Of Cryptid Sightings In Point Pleasant And Their Sociocultural Implications: KEPT
+   [Bench]    -> Immediate Lead: The Role of Mothman Sightings in Point Pleasant's Economic Development
+   [WikiAgent] Searching index for '2. "Mothman Curse: The Legend Of Chief Cornstalk - Folklore'...
+   [WikiAgent] No results for '2. "Mothman Curse: The Legend Of Chief Cornstalk - Folklore'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Mothman', 'Curse:', 'Legend', 'Chief', 'Cornstalk', 'Folklore']
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Redirecting: Cornstalk → Corn stalk
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [74] 2. "Mothman Curse: The Legend Of Chief Cornstalk - Folklore: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant - Eyewitness Accounts and Economic Impact
+   [WikiAgent] Found exact title match: Mythology
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [75] Mythology: KEPT
+   [Bench]    -> Immediate Lead: The Legend of Mothman: A Study in Folklore and Local Mythology
+   [WikiAgent] Searching index for 'And Local Impact'...
+   [WikiAgent] No results for 'And Local Impact'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Local', 'Impact']
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Impact
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [76] And Local Impact: KEPT
+   [WikiAgent] Searching index for '3. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'...
+   [WikiAgent] No results for '3. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['"Economic', 'Analysis', 'Tourism', 'Boosts', 'Linked', 'Cryptid', 'Sightings:', 'Case', 'Studies', 'From', 'Point', 'Pleasant', 'Beyond']
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Linked
+   [WikiAgent] Found keyword title match: Cryptid
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Studies
+   [WikiAgent] Found keyword title match: From
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Beyond
+   [WikiAgent] Redirecting: Linked → Link
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [77] 3. "Economic Analysis Of Tourism Boosts Linked To Cryptid Sightings: Case Studies From Point Pleasant And Beyond: Discarded
+   [WikiAgent] Searching index for 'The Mothman Prophecies: A Connection to the Silver Bridge Collapse'...
+   [WikiAgent] No results for 'The Mothman Prophecies: A Connection to the Silver Bridge Collapse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies:', 'Connection', 'Silver', 'Bridge', 'Collapse']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Connection
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [78] The Mothman Prophecies: A Connection to the Silver Bridge Collapse: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant (1966-1967)
+   [WikiAgent] Searching index for 'The Mothman Prophecies and Point Pleasant's Tourism Boom'...
+   [WikiAgent] No results for 'The Mothman Prophecies and Point Pleasant's Tourism Boom'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies', 'Point', "Pleasant's", 'Tourism', 'Boom']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Prophecies
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Boom
+   [WikiAgent] Redirecting: Prophecies → Prophecy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [79] The Mothman Prophecies and Point Pleasant's Tourism Boom: KEPT
+   [Bench]    -> Immediate Lead: The Economic Impact of Mothman Sightings on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for 'Mothman Sightings and Their Impact on Point Pleasant's Tourism Industry'...
+   [WikiAgent] No results for 'Mothman Sightings and Their Impact on Point Pleasant's Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Their', 'Impact', 'Point', "Pleasant's", 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [WikiAgent] Redirecting: Their → They
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: ibm/granite-4-h-tiny)...
+   [Bench] [80] Mothman Sightings and Their Impact on Point Pleasant's Tourism Industry: KEPT
+
+RESULT: 74 sources in 170.4s (8 cycles)
+

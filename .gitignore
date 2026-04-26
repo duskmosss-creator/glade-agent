@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Configuration
+settings.json
+*.backup
+*.bak
+
+# Data and models
+data/
+models/*.onnx
+models/*.pt
+processed_uids.json
+
+# Logs and databases
+logs/
+*.sqlite3
+*.db
+wiki_out.txt
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Output & Temp folders
+_archive/
+attachments/
+locked_wiki_backup/
+doc_assets/
+docs.html
+weather/
+reports/

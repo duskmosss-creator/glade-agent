@@ -1,0 +1,1063 @@
+Deep Benchmark: llama-3.2-3b-instruct
+Config: 1 Iterations | 80 Max Searches | 8 Forced Cycles
+
+--- ITERATION 1 ---
+   [Bench] PHASE 1: Initial Planning...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Plan: ['1. Mothman Prophecies', '2. Point Pleasant', 'West Virginia', '3. Mary Hyre', '4. The Mothman Of Point Pleasant', '5. The Mothman Festival', '6. Silver Bridge Disaster']
+
+   [Bench] --- CYCLE 1 (Queue: 7) ---
+   [WikiAgent] Searching index for '1. Mothman Prophecies'...
+   [WikiAgent] No results for '1. Mothman Prophecies'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Prophecies
+   [WikiAgent] Redirecting: Prophecies → Prophecy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [1] 1. Mothman Prophecies: KEPT
+   [Bench]    -> Immediate Lead: Point Pleasant West Virginia Mothman Sightings 1966-1967 Eyewitness Accounts
+   [WikiAgent] Searching index for '2. Point Pleasant'...
+   [WikiAgent] No results for '2. Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [2] 2. Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Economic Impact
+   [WikiAgent] Found exact title match: West Virginia
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [3] West Virginia: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant West Virginia 1966-1967
+   [WikiAgent] Searching index for '3. Mary Hyre'...
+   [WikiAgent] No results for '3. Mary Hyre'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [4] 3. Mary Hyre: KEPT
+   [Bench]    -> Immediate Lead: Mary Hyre journalist Point Pleasant Mothman
+   [WikiAgent] Searching index for '4. The Mothman Of Point Pleasant'...
+   [WikiAgent] No results for '4. The Mothman Of Point Pleasant'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [5] 4. The Mothman Of Point Pleasant: KEPT
+   [Bench]    -> Immediate Lead: Point Pleasant Mothman Sightings 1966-1967 Eyewitness Accounts
+   [WikiAgent] Searching index for '5. The Mothman Festival'...
+   [WikiAgent] No results for '5. The Mothman Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Festival']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [6] 5. The Mothman Festival: KEPT
+   [Bench]    -> Immediate Lead: Point Pleasant West Virginia Silver Bridge Collapse
+   [WikiAgent] Searching index for '6. Silver Bridge Disaster'...
+   [WikiAgent] No results for '6. Silver Bridge Disaster'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Disaster']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Disaster
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [7] 6. Silver Bridge Disaster: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant West Virginia 1966-1967
+   [WikiAgent] Searching index for 'Point Pleasant West Virginia Mothman Sightings 1966-1967 Eyewitness Accounts'...
+   [WikiAgent] No results for 'Point Pleasant West Virginia Mothman Sightings 1966-1967 Eyewitness Accounts'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant', 'West', 'Virginia', 'Mothman', 'Sightings', '1966-1967', 'Eyewitness', 'Accounts']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [8] Point Pleasant West Virginia Mothman Sightings 1966-1967 Eyewitness Accounts: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings 1966-1967 Eyewitness Accounts Mary Hyre Investigation
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Economic Impact'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Economic Impact'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967', 'Eyewitness', 'Accounts', 'Economic', 'Impact']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [9] Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Economic Impact: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [10] Mothman Sightings in Point Pleasant West Virginia 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967
+   [Bench] End of Cycle 1. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Silver Bridge Disaster'S Role In Mothman Sightings And Local Folklore", "The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry", 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Connection To Mothman Sightings']
+
+   [Bench] --- CYCLE 2 (Queue: 10) ---
+   [WikiAgent] Searching index for 'Mary Hyre journalist Point Pleasant Mothman'...
+   [WikiAgent] No results for 'Mary Hyre journalist Point Pleasant Mothman'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre', 'journalist', 'Point', 'Pleasant', 'Mothman']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [11] Mary Hyre journalist Point Pleasant Mothman: KEPT
+   [Bench]    -> Immediate Lead: Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation
+   [WikiAgent] Searching index for 'Point Pleasant Mothman Sightings 1966-1967 Eyewitness Accounts'...
+   [WikiAgent] No results for 'Point Pleasant Mothman Sightings 1966-1967 Eyewitness Accounts'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant', 'Mothman', 'Sightings', '1966-1967', 'Eyewitness', 'Accounts']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [12] Point Pleasant Mothman Sightings 1966-1967 Eyewitness Accounts: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Legends
+   [WikiAgent] Searching index for 'Point Pleasant West Virginia Silver Bridge Collapse'...
+   [WikiAgent] No results for 'Point Pleasant West Virginia Silver Bridge Collapse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant', 'West', 'Virginia', 'Silver', 'Bridge', 'Collapse']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [13] Point Pleasant West Virginia Silver Bridge Collapse: KEPT
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant West Virginia
+   [WikiAgent] Searching index for 'Mothman Sightings 1966-1967 Eyewitness Accounts Mary Hyre Investigation'...
+   [WikiAgent] No results for 'Mothman Sightings 1966-1967 Eyewitness Accounts Mary Hyre Investigation'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', '1966-1967', 'Eyewitness', 'Accounts', 'Mary', 'Hyre', 'Investigation']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: Investigation
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [14] Mothman Sightings 1966-1967 Eyewitness Accounts Mary Hyre Investigation: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of the Mothman Sightings in Point Pleasant 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Closer', 'Look', 'Roger', 'Scarberry', 'Mary', "Hyre's", 'Experiences']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Closer
+   [WikiAgent] Found keyword title match: Look
+   [WikiAgent] Found keyword title match: Roger
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Experiences
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [15] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Roger Scarberry and Mary Hyre's Experiences
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [16] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967
+   [WikiAgent] Searching index for 'The Silver Bridge Disaster'S Role In Mothman Sightings And Local Folklore'...
+   [WikiAgent] No results for 'The Silver Bridge Disaster'S Role In Mothman Sightings And Local Folklore'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', "Disaster'S", 'Role', 'Mothman', 'Sightings', 'Local', 'Folklore']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [17] The Silver Bridge Disaster'S Role In Mothman Sightings And Local Folklore: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Eyewitness Accounts and Folklore
+   [WikiAgent] Searching index for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry'...
+   [WikiAgent] No results for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Festival', 'Point', "Pleasant'S", 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [18] The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: KEPT
+   [Bench]    -> Immediate Lead: The Economic Impact of the Mothman Festival on Point Pleasant's Tourism Industry: A Case Study
+   [WikiAgent] Searching index for 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Connection To Mothman Sightings'...
+   [WikiAgent] No results for 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Connection To Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Uncovering', 'Historical', 'Significance', 'Chief', 'Cornstalk', 'West', 'Virginia', 'Folklore', 'Its', 'Connection', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Significance
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Connection
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Historical → History
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [19] Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Connection To Mothman Sightings: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Prophecies: Uncovering the Legend of Point Pleasant, West Virginia
+   [WikiAgent] Searching index for 'Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation'...
+   [WikiAgent] No results for 'Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre', 'journalist', 'Point', 'Pleasant', 'Mothman', '1966-1967', 'investigation']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: investigation
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [20] Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation: KEPT
+   [Bench]    -> Immediate Lead: Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation Mary Hyre
+   [Bench] End of Cycle 2. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis"]
+
+   [Bench] --- CYCLE 3 (Queue: 10) ---
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Legends'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Legends'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967', 'Eyewitness', 'Accounts', 'Legends']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Legends
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [21] Mothman Sightings in Point Pleasant West Virginia 1966-1967 Eyewitness Accounts and Legends: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant West Virginia'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [22] Mothman Sightings in Point Pleasant West Virginia: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967
+   [WikiAgent] Searching index for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences'...
+   [WikiAgent] No results for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', '1966-1967:', 'Closer', 'Look', 'Roger', 'Scarberry', 'Mary', "Hyre's", 'Experiences']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Closer
+   [WikiAgent] Found keyword title match: Look
+   [WikiAgent] Found keyword title match: Roger
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Experiences
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [23] Eyewitness Accounts of the Mothman Sightings in Point Pleasant 1966-1967: A Closer Look at Roger Scarberry and Mary Hyre's Experiences: KEPT
+   [WikiAgent] Searching index for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Roger Scarberry and Mary Hyre's Experiences'...
+   [WikiAgent] No results for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Roger Scarberry and Mary Hyre's Experiences'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Roger', 'Scarberry', 'Mary', "Hyre's", 'Experiences']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Roger
+   [WikiAgent] Found keyword title match: Scarberry
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Experiences
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [24] Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Roger Scarberry and Mary Hyre's Experiences: KEPT
+   [WikiAgent] Searching index for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967'...
+   [WikiAgent] No results for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [25] Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: KEPT
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Eyewitness Accounts and Folklore'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Eyewitness Accounts and Folklore'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Eyewitness', 'Accounts', 'Folklore']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [26] Mothman Sightings in Point Pleasant, West Virginia 1966-1967: Eyewitness Accounts and Folklore: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis
+   [WikiAgent] Searching index for 'The Economic Impact of the Mothman Festival on Point Pleasant's Tourism Industry: A Case Study'...
+   [WikiAgent] No results for 'The Economic Impact of the Mothman Festival on Point Pleasant's Tourism Industry: A Case Study'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Festival', 'Point', "Pleasant's", 'Tourism', 'Industry:', 'Case', 'Study']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [27] The Economic Impact of the Mothman Festival on Point Pleasant's Tourism Industry: A Case Study: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Festival's Economic Impact on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings
+   [WikiAgent] Searching index for 'The Mothman Prophecies: Uncovering the Legend of Point Pleasant, West Virginia'...
+   [WikiAgent] No results for 'The Mothman Prophecies: Uncovering the Legend of Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Prophecies:', 'Uncovering', 'Legend', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [28] The Mothman Prophecies: Uncovering the Legend of Point Pleasant, West Virginia: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse and the Mothman Legend: A Connection?
+   [WikiAgent] Searching index for 'Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation Mary Hyre'...
+   [WikiAgent] No results for 'Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation Mary Hyre'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre', 'journalist', 'Point', 'Pleasant', 'Mothman', '1966-1967', 'investigation', 'Mary', 'Hyre']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: investigation
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [29] Mary Hyre journalist Point Pleasant Mothman 1966-1967 investigation Mary Hyre: KEPT
+   [Bench]    -> Immediate Lead: Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967
+   [WikiAgent] Searching index for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis'...
+   [WikiAgent] No results for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Festival', 'Point', "Pleasant'S", 'Tourism', 'Industry:', 'Critical', 'Analysis']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [30] The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis: Discarded
+   [Bench] End of Cycle 3. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Silver Bridge Collapse'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings", 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Potential Link To The Mothman Legend', "The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy"]
+
+   [Bench] --- CYCLE 4 (Queue: 9) ---
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Critical', 'Analysis']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [31] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis: KEPT
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [32] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: Scarberry/Mallette and Mary Hyre's Investigation
+   [WikiAgent] Searching index for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis'...
+   [WikiAgent] No results for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Critical', 'Analysis']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [33] Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia 1966-1967: A Critical Analysis: KEPT
+   [WikiAgent] Searching index for 'The Mothman Festival's Economic Impact on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings'...
+   [WikiAgent] No results for 'The Mothman Festival's Economic Impact on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', "Festival's", 'Economic', 'Impact', 'Point', "Pleasant's", 'Tourism', 'Industry:', 'Case', 'Study', '1966-1967', 'Sightings']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [34] The Mothman Festival's Economic Impact on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings: KEPT
+   [Bench]    -> Immediate Lead: The Economic Impact of the Mothman Legend on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings and Festival
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse and the Mothman Legend: A Connection?'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse and the Mothman Legend: A Connection?'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', 'Mothman', 'Legend:', 'Connection?']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Mothman
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [35] The Silver Bridge Collapse and the Mothman Legend: A Connection?: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of Point Pleasant, West Virginia: A Folkloric Analysis
+   [WikiAgent] Searching index for 'Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967'...
+   [WikiAgent] No results for 'Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre', 'journalist', 'investigation', 'Mothman', 'Point', 'Pleasant', '1966-1967']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: investigation
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [36] Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967 eyewitness accounts
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', "Collapse'S", 'Role', 'Shaping', 'Local', 'Folklore', 'Its', 'Connection', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Connection
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [37] The Silver Bridge Collapse'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings: Discarded
+   [Bench]    -> Immediate Lead: The Mothman of Point Pleasant: A Folkloric Legacy
+   [WikiAgent] Searching index for 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Potential Link To The Mothman Legend'...
+   [WikiAgent] No results for 'Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Potential Link To The Mothman Legend'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Uncovering', 'Historical', 'Significance', 'Chief', 'Cornstalk', 'West', 'Virginia', 'Folklore', 'Its', 'Potential', 'Link', 'Mothman', 'Legend']
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Significance
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Potential
+   [WikiAgent] Found keyword title match: Link
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Redirecting: Historical → History
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [38] Uncovering The Historical Significance Of Chief Cornstalk In West Virginia Folklore And Its Potential Link To The Mothman Legend: KEPT
+   [WikiAgent] Searching index for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy'...
+   [WikiAgent] No results for 'The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Festival', 'Point', "Pleasant'S", 'Tourism', 'Industry:', 'Critical', 'Analysis', 'Silver', 'Bridge', "Disaster'S", 'Legacy']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [39] The Economic Impact Of The Mothman Festival On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy: Discarded
+   [WikiAgent] Searching index for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: Scarberry/Mallette and Mary Hyre's Investigation'...
+   [WikiAgent] No results for 'Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: Scarberry/Mallette and Mary Hyre's Investigation'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Scarberry/Mallette', 'Mary', "Hyre's", 'Investigation']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Investigation
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [40] Eyewitness Accounts of Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: Scarberry/Mallette and Mary Hyre's Investigation: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: A Historical Analysis
+   [Bench] End of Cycle 4. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Silver Bridge Disaster'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings"]
+
+   [Bench] --- CYCLE 5 (Queue: 6) ---
+   [WikiAgent] Searching index for 'The Economic Impact of the Mothman Legend on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings and Festival'...
+   [WikiAgent] No results for 'The Economic Impact of the Mothman Legend on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings and Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Legend', 'Point', "Pleasant's", 'Tourism', 'Industry:', 'Case', 'Study', '1966-1967', 'Sightings', 'Festival']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [41] The Economic Impact of the Mothman Legend on Point Pleasant's Tourism Industry: A Case Study of the 1966-1967 Sightings and Festival: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Legend and Point Pleasant's Economic Revitalization: A Case Study of the 1966-1967 Sightings and Festival
+   [WikiAgent] Searching index for 'The Mothman Sightings of Point Pleasant, West Virginia: A Folkloric Analysis'...
+   [WikiAgent] No results for 'The Mothman Sightings of Point Pleasant, West Virginia: A Folkloric Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia:', 'Folkloric', 'Analysis']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Folkloric
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [42] The Mothman Sightings of Point Pleasant, West Virginia: A Folkloric Analysis: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse and the Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis
+   [WikiAgent] Searching index for 'Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967 eyewitness accounts'...
+   [WikiAgent] No results for 'Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967 eyewitness accounts'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mary', 'Hyre', 'journalist', 'investigation', 'Mothman', 'Point', 'Pleasant', '1966-1967', 'eyewitness', 'accounts']
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: journalist
+   [WikiAgent] Found keyword title match: investigation
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: eyewitness
+   [WikiAgent] Found keyword title match: accounts
+   [WikiAgent] Redirecting: Hyre → Riboflavin
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [43] Mary Hyre journalist investigation Mothman Point Pleasant 1966-1967 eyewitness accounts: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967
+   [WikiAgent] Searching index for 'The Mothman of Point Pleasant: A Folkloric Legacy'...
+   [WikiAgent] No results for 'The Mothman of Point Pleasant: A Folkloric Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant:', 'Folkloric', 'Legacy']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Folkloric
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Redirecting: Folkloric → Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [44] The Mothman of Point Pleasant: A Folkloric Legacy: KEPT
+   [Bench]    -> Immediate Lead: The Point Pleasant Mothman Bridge Collapse: A Folkloric Legacy of Tragedy and Mystery
+   [WikiAgent] Searching index for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: A Historical Analysis'...
+   [WikiAgent] No results for 'Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: A Historical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'Accounts', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia', '1966-1967:', 'Historical', 'Analysis']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [45] Eyewitness Accounts of the Mothman Sightings in Point Pleasant, West Virginia, 1966-1967: A Historical Analysis: KEPT
+   [WikiAgent] Searching index for 'The Silver Bridge Disaster'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings'...
+   [WikiAgent] No results for 'The Silver Bridge Disaster'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', "Disaster'S", 'Role', 'Shaping', 'Local', 'Folklore', 'Its', 'Connection', 'Mothman', 'Sightings']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Its
+   [WikiAgent] Found keyword title match: Connection
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [46] The Silver Bridge Disaster'S Role In Shaping Local Folklore And Its Connection To Mothman Sightings: Discarded
+   [Bench]    -> Immediate Lead: The Mothman of Point Pleasant: A Folkloric Analysis of the Silver Bridge Disaster's Legacy
+   [WikiAgent] Searching index for 'The Mothman Legend and Point Pleasant's Economic Revitalization: A Case Study of the 1966-1967 Sightings and Festival'...
+   [WikiAgent] No results for 'The Mothman Legend and Point Pleasant's Economic Revitalization: A Case Study of the 1966-1967 Sightings and Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Legend', 'Point', "Pleasant's", 'Economic', 'Revitalization:', 'Case', 'Study', '1966-1967', 'Sightings', 'Festival']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Case
+   [WikiAgent] Found keyword title match: Study
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Festival
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [47] The Mothman Legend and Point Pleasant's Economic Revitalization: A Case Study of the 1966-1967 Sightings and Festival: KEPT
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse and the Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse and the Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', 'Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia:', 'Historical', 'Analysis']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Analysis
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [48] The Silver Bridge Collapse and the Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis
+   [WikiAgent] Searching index for 'Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967'...
+   [WikiAgent] No results for 'Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'accounts', 'Mothman', 'sightings', 'Point', 'Pleasant', '1966-1967']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [49] Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967: KEPT
+   [Bench]    -> Immediate Lead: Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967: Scarberry/Mallette, Mary Hyre, Chief Cornstalk curse, and economic impact on tourism and festival.
+   [WikiAgent] Searching index for 'The Point Pleasant Mothman Bridge Collapse: A Folkloric Legacy of Tragedy and Mystery'...
+   [WikiAgent] No results for 'The Point Pleasant Mothman Bridge Collapse: A Folkloric Legacy of Tragedy and Mystery'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant', 'Mothman', 'Bridge', 'Collapse:', 'Folkloric', 'Legacy', 'Tragedy', 'Mystery']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Folkloric
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Found keyword title match: Tragedy
+   [WikiAgent] Found keyword title match: Mystery
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [50] The Point Pleasant Mothman Bridge Collapse: A Folkloric Legacy of Tragedy and Mystery: KEPT
+   [Bench]    -> Immediate Lead: The Mothman of Point Pleasant: Uncovering the Legend and Legacy
+   [Bench] End of Cycle 5. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Economic Impact Of The 1966-1967 Mothman Sightings On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy"]
+
+   [Bench] --- CYCLE 6 (Queue: 5) ---
+   [WikiAgent] Searching index for 'The Mothman of Point Pleasant: A Folkloric Analysis of the Silver Bridge Disaster's Legacy'...
+   [WikiAgent] No results for 'The Mothman of Point Pleasant: A Folkloric Analysis of the Silver Bridge Disaster's Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant:', 'Folkloric', 'Analysis', 'Silver', 'Bridge', "Disaster's", 'Legacy']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Folkloric
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Redirecting: Folkloric → Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [51] The Mothman of Point Pleasant: A Folkloric Analysis of the Silver Bridge Disaster's Legacy: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Disaster and the Mothman Legend: A Cultural Analysis of Trauma and Folklore in Point Pleasant, West Virginia
+   [WikiAgent] Searching index for 'The Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis'...
+   [WikiAgent] No results for 'The Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', 'West', 'Virginia:', 'Historical', 'Analysis']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [52] The Mothman Sightings of Point Pleasant, West Virginia: A Historical Analysis: KEPT
+   [WikiAgent] Searching index for 'Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967: Scarberry/Mallette, Mary Hyre, Chief Cornstalk curse, and economic impact on tourism and festival.'...
+   [WikiAgent] No results for 'Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967: Scarberry/Mallette, Mary Hyre, Chief Cornstalk curse, and economic impact on tourism and festival.'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Eyewitness', 'accounts', 'Mothman', 'sightings', 'Point', 'Pleasant', '1966-1967:', 'Scarberry/Mallette', 'Mary', 'Hyre', 'Chief', 'Cornstalk', 'curse', 'economic', 'impact', 'tourism', 'festival.']
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mary
+   [WikiAgent] Found keyword title match: Hyre
+   [WikiAgent] Found keyword title match: Chief
+   [WikiAgent] Found keyword title match: Cornstalk
+   [WikiAgent] Found keyword title match: curse
+   [WikiAgent] Found keyword title match: economic
+   [WikiAgent] Found keyword title match: impact
+   [WikiAgent] Found keyword title match: tourism
+   [WikiAgent] Redirecting: Accounts → Account
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [53] Eyewitness accounts of Mothman sightings in Point Pleasant 1966-1967: Scarberry/Mallette, Mary Hyre, Chief Cornstalk curse, and economic impact on tourism and festival.: KEPT
+   [WikiAgent] Searching index for 'The Mothman of Point Pleasant: Uncovering the Legend and Legacy'...
+   [WikiAgent] No results for 'The Mothman of Point Pleasant: Uncovering the Legend and Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant:', 'Uncovering', 'Legend', 'Legacy']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Legacy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [54] The Mothman of Point Pleasant: Uncovering the Legend and Legacy: KEPT
+   [Bench]    -> Immediate Lead: The Point Pleasant Mothman Bridge Collapse: A Connection to the Legendary Creature?
+   [WikiAgent] Searching index for 'The Economic Impact Of The 1966-1967 Mothman Sightings On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy'...
+   [WikiAgent] No results for 'The Economic Impact Of The 1966-1967 Mothman Sightings On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', '1966-1967', 'Mothman', 'Sightings', 'Point', "Pleasant'S", 'Tourism', 'Industry:', 'Critical', 'Analysis', 'Silver', 'Bridge', "Disaster'S", 'Legacy']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [55] The Economic Impact Of The 1966-1967 Mothman Sightings On Point Pleasant'S Tourism Industry: A Critical Analysis Of The Silver Bridge Disaster'S Legacy: Discarded
+   [Bench]    -> Immediate Lead: The Economic Impact of the Mothman Sightings on Point Pleasant's Tourism Industry: A Critical Analysis of the Silver Bridge Disaster's Legacy
+   [WikiAgent] Searching index for 'The Silver Bridge Disaster and the Mothman Legend: A Cultural Analysis of Trauma and Folklore in Point Pleasant, West Virginia'...
+   [WikiAgent] No results for 'The Silver Bridge Disaster and the Mothman Legend: A Cultural Analysis of Trauma and Folklore in Point Pleasant, West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Disaster', 'Mothman', 'Legend:', 'Cultural', 'Analysis', 'Trauma', 'Folklore', 'Point', 'Pleasant', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Disaster
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Trauma
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [56] The Silver Bridge Disaster and the Mothman Legend: A Cultural Analysis of Trauma and Folklore in Point Pleasant, West Virginia: Discarded
+   [Bench]    -> Immediate Lead: The Mothman of Point Pleasant: A Cultural Analysis of Folklore and Trauma in West Virginia
+   [WikiAgent] Searching index for 'The Point Pleasant Mothman Bridge Collapse: A Connection to the Legendary Creature?'...
+   [WikiAgent] No results for 'The Point Pleasant Mothman Bridge Collapse: A Connection to the Legendary Creature?'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Point', 'Pleasant', 'Mothman', 'Bridge', 'Collapse:', 'Connection', 'Legendary', 'Creature?']
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Connection
+   [WikiAgent] Found keyword title match: Legendary
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [57] The Point Pleasant Mothman Bridge Collapse: A Connection to the Legendary Creature?: KEPT
+   [Bench]    -> Immediate Lead: The Mothman of Point Pleasant: Eyewitness Accounts and the Silver Bridge Collapse
+   [WikiAgent] Searching index for 'The Economic Impact of the Mothman Sightings on Point Pleasant's Tourism Industry: A Critical Analysis of the Silver Bridge Disaster's Legacy'...
+   [WikiAgent] No results for 'The Economic Impact of the Mothman Sightings on Point Pleasant's Tourism Industry: A Critical Analysis of the Silver Bridge Disaster's Legacy'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Sightings', 'Point', "Pleasant's", 'Tourism', 'Industry:', 'Critical', 'Analysis', 'Silver', 'Bridge', "Disaster's", 'Legacy']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Legacy
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [58] The Economic Impact of the Mothman Sightings on Point Pleasant's Tourism Industry: A Critical Analysis of the Silver Bridge Disaster's Legacy: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of 1966-67 and the Economic Impact on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for 'The Mothman of Point Pleasant: A Cultural Analysis of Folklore and Trauma in West Virginia'...
+   [WikiAgent] No results for 'The Mothman of Point Pleasant: A Cultural Analysis of Folklore and Trauma in West Virginia'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant:', 'Cultural', 'Analysis', 'Folklore', 'Trauma', 'West', 'Virginia']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Cultural
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Folklore
+   [WikiAgent] Found keyword title match: Trauma
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Virginia
+   [WikiAgent] Redirecting: Cultural → Culture
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [59] The Mothman of Point Pleasant: A Cultural Analysis of Folklore and Trauma in West Virginia: KEPT
+   [WikiAgent] Searching index for 'The Mothman of Point Pleasant: Eyewitness Accounts and the Silver Bridge Collapse'...
+   [WikiAgent] No results for 'The Mothman of Point Pleasant: Eyewitness Accounts and the Silver Bridge Collapse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Point', 'Pleasant:', 'Eyewitness', 'Accounts', 'Silver', 'Bridge', 'Collapse']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [60] The Mothman of Point Pleasant: Eyewitness Accounts and the Silver Bridge Collapse: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse of 1967: Eyewitness Accounts and the Mothman Legend
+   [Bench] End of Cycle 6. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Silver Bridge Disaster'S Role In Shaping Local Folklore", "The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings And Festival"]
+
+   [Bench] --- CYCLE 7 (Queue: 4) ---
+   [WikiAgent] Searching index for 'The Mothman Sightings of 1966-67 and the Economic Impact on Point Pleasant's Tourism Industry'...
+   [WikiAgent] No results for 'The Mothman Sightings of 1966-67 and the Economic Impact on Point Pleasant's Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', '1966-67', 'Economic', 'Impact', 'Point', "Pleasant's", 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [61] The Mothman Sightings of 1966-67 and the Economic Impact on Point Pleasant's Tourism Industry: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse and the Mothman Sightings of 1966-67: A Connection?
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse of 1967: Eyewitness Accounts and the Mothman Legend'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse of 1967: Eyewitness Accounts and the Mothman Legend'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', '1967:', 'Eyewitness', 'Accounts', 'Mothman', 'Legend']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [62] The Silver Bridge Collapse of 1967: Eyewitness Accounts and the Mothman Legend: Discarded
+   [Bench]    -> Immediate Lead: Mothman Sightings in Point Pleasant 1966-1967 Eyewitness Accounts and the Silver Bridge Collapse
+   [WikiAgent] Searching index for 'The Silver Bridge Disaster'S Role In Shaping Local Folklore'...
+   [WikiAgent] No results for 'The Silver Bridge Disaster'S Role In Shaping Local Folklore'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', "Disaster'S", 'Role', 'Shaping', 'Local', 'Folklore']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Role
+   [WikiAgent] Found keyword title match: Shaping
+   [WikiAgent] Found keyword title match: Local
+   [WikiAgent] Found keyword title match: Folklore
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [63] The Silver Bridge Disaster'S Role In Shaping Local Folklore: Discarded
+   [WikiAgent] Searching index for 'The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings And Festival'...
+   [WikiAgent] No results for 'The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings And Festival'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Legend', 'Point', "Pleasant'S", 'Tourism', 'Industry:', 'Critical', 'Analysis', '1966-1967', 'Sightings', 'Festival']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Festival
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [64] The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings And Festival: Discarded
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse and the Mothman Sightings of 1966-67: A Connection?'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse and the Mothman Sightings of 1966-67: A Connection?'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', 'Mothman', 'Sightings', '1966-67:', 'Connection?']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [65] The Silver Bridge Collapse and the Mothman Sightings of 1966-67: A Connection?: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of 1966-67 and the Silver Bridge Collapse: A Historical Analysis
+   [WikiAgent] Searching index for 'Mothman Sightings in Point Pleasant 1966-1967 Eyewitness Accounts and the Silver Bridge Collapse'...
+   [WikiAgent] No results for 'Mothman Sightings in Point Pleasant 1966-1967 Eyewitness Accounts and the Silver Bridge Collapse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', 'Point', 'Pleasant', '1966-1967', 'Eyewitness', 'Accounts', 'Silver', 'Bridge', 'Collapse']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [66] Mothman Sightings in Point Pleasant 1966-1967 Eyewitness Accounts and the Silver Bridge Collapse: KEPT
+   [WikiAgent] Searching index for 'The Mothman Sightings of 1966-67 and the Silver Bridge Collapse: A Historical Analysis'...
+   [WikiAgent] No results for 'The Mothman Sightings of 1966-67 and the Silver Bridge Collapse: A Historical Analysis'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', '1966-67', 'Silver', 'Bridge', 'Collapse:', 'Historical', 'Analysis']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Historical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [67] The Mothman Sightings of 1966-67 and the Silver Bridge Collapse: A Historical Analysis: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse of 1967: A Closer Look at the Mothman Sightings and Their Possible Connection
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse of 1967: A Closer Look at the Mothman Sightings and Their Possible Connection'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse of 1967: A Closer Look at the Mothman Sightings and Their Possible Connection'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', '1967:', 'Closer', 'Look', 'Mothman', 'Sightings', 'Their', 'Possible', 'Connection']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Closer
+   [WikiAgent] Found keyword title match: Look
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Possible
+   [WikiAgent] Found keyword title match: Connection
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [68] The Silver Bridge Collapse of 1967: A Closer Look at the Mothman Sightings and Their Possible Connection: Discarded
+   [Bench] End of Cycle 7. Forcing expansion...
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] Expansion Leads: ["The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings"]
+
+   [Bench] --- CYCLE 8 (Queue: 1) ---
+   [WikiAgent] Searching index for 'The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings'...
+   [WikiAgent] No results for 'The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Economic', 'Impact', 'Mothman', 'Legend', 'Point', "Pleasant'S", 'Tourism', 'Industry:', 'Critical', 'Analysis', '1966-1967', 'Sightings']
+   [WikiAgent] Found keyword title match: Economic
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Legend
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Critical
+   [WikiAgent] Found keyword title match: Analysis
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Redirecting: Economic → Economy
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [69] The Economic Impact Of The Mothman Legend On Point Pleasant'S Tourism Industry: A Critical Analysis Of The 1966-1967 Sightings: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of 1966-1967 and Their Impact on Point Pleasant's Tourism Industry
+   [WikiAgent] Searching index for 'The Mothman Sightings of 1966-1967 and Their Impact on Point Pleasant's Tourism Industry'...
+   [WikiAgent] No results for 'The Mothman Sightings of 1966-1967 and Their Impact on Point Pleasant's Tourism Industry'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', '1966-1967', 'Their', 'Impact', 'Point', "Pleasant's", 'Tourism', 'Industry']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Their
+   [WikiAgent] Found keyword title match: Impact
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Tourism
+   [WikiAgent] Found keyword title match: Industry
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [WikiAgent] Redirecting: Their → They
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [70] The Mothman Sightings of 1966-1967 and Their Impact on Point Pleasant's Tourism Industry: KEPT
+   [Bench]    -> Immediate Lead: The Silver Bridge Collapse and the Mothman Sightings of 1966-1967: A Connection?
+   [WikiAgent] Searching index for 'The Silver Bridge Collapse and the Mothman Sightings of 1966-1967: A Connection?'...
+   [WikiAgent] No results for 'The Silver Bridge Collapse and the Mothman Sightings of 1966-1967: A Connection?'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Silver', 'Bridge', 'Collapse', 'Mothman', 'Sightings', '1966-1967:', 'Connection?']
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [71] The Silver Bridge Collapse and the Mothman Sightings of 1966-1967: A Connection?: Discarded
+   [Bench]    -> Immediate Lead: The Mothman Sightings of 1966-1967 in Point Pleasant, West Virginia: Eyewitness Accounts and the Silver Bridge Collapse
+   [WikiAgent] Searching index for 'The Mothman Sightings of 1966-1967 in Point Pleasant, West Virginia: Eyewitness Accounts and the Silver Bridge Collapse'...
+   [WikiAgent] No results for 'The Mothman Sightings of 1966-1967 in Point Pleasant, West Virginia: Eyewitness Accounts and the Silver Bridge Collapse'. Trying Auto-Broadening...
+   [WikiAgent] Keywords extracted: ['Mothman', 'Sightings', '1966-1967', 'Point', 'Pleasant', 'West', 'Virginia:', 'Eyewitness', 'Accounts', 'Silver', 'Bridge', 'Collapse']
+   [WikiAgent] Found keyword title match: Mothman
+   [WikiAgent] Found keyword title match: Sightings
+   [WikiAgent] Found keyword title match: Point
+   [WikiAgent] Found keyword title match: Pleasant
+   [WikiAgent] Found keyword title match: West
+   [WikiAgent] Found keyword title match: Eyewitness
+   [WikiAgent] Found keyword title match: Accounts
+   [WikiAgent] Found keyword title match: Silver
+   [WikiAgent] Found keyword title match: Bridge
+   [WikiAgent] Found keyword title match: Collapse
+   [WikiAgent] Redirecting: Sightings → Discovery (observation)
+   [API] POST to http://127.0.0.1:1234/v1/chat/completions (Model: llama-3.2-3b-instruct)...
+   [Bench] [72] The Mothman Sightings of 1966-1967 in Point Pleasant, West Virginia: Eyewitness Accounts and the Silver Bridge Collapse: KEPT
+
+RESULT: 50 sources in 127.7s (8 cycles)
+

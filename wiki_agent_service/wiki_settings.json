@@ -1,0 +1,21 @@
+{
+    "mode": "hybrid",
+    "simple": {
+        "api_base": "http://localhost:8000/api/v1",
+        "model": "Qwen3-8b-FLM",
+        "timeout": 300
+    },
+    "hybrid": {
+        "fast_model": {
+            "api_base": "http://127.0.0.1:1234/v1",
+            "model": "ibm/granite-4-h-tiny",
+            "timeout": 60
+        },
+        "smart_model": {
+            "api_base": "http://127.0.0.1:1234/v1",
+            "model": "mistral-nemo-12b-instruct",
+            "timeout": 600
+        }
+    },
+    "zim_path": "C:\\path\\to\\your\\wikipedia.zim"
+}
