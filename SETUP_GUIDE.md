@@ -87,16 +87,16 @@ The Glade Agent is a "brain-optional" system—it needs a local API to talk to. 
 
 ### B. Recommended Models (Text)
 
-For the best balance of speed and intelligence on consumer hardware:
+For the best balance of speed and intelligence on consumer hardware, search for the **GGUF** versions of these models (we recommend versions quantized to `Q4_K_M` or `Q5_K_M`):
 
-*   **Llama-3.2-3B-Instruct** (Recommended): The gold standard for 8GB-16GB RAM. Fast, smart, and handles SMS brevity well.
-*   **Qwen2.5-7B-Instruct**: More powerful reasoning. Requires 16GB+ RAM but provides much deeper answers.
-*   **Phi-3.5-mini**: Extremely fast. Ideal for older hardware or very high-latency connections.
+*   **Llama-3.2-3B-Instruct** (Recommended): The gold standard for 8GB-16GB RAM. Fast, smart, and handles SMS brevity well. Search term: `bartowski/Llama-3.2-3B-Instruct-GGUF`.
+*   **Qwen2.5-7B-Instruct**: More powerful reasoning. Requires 16GB+ RAM but provides much deeper answers. Search term: `Qwen/Qwen2.5-7B-Instruct-GGUF`.
+*   **Phi-3.5-mini-instruct**: Extremely fast. Ideal for older hardware or very high-latency connections. Search term: `microsoft/Phi-3.5-mini-instruct-GGUF`.
 
 ### C. Vision Model (Required for !identify)
 
 To use the plant/object identification feature, you need a Vision-Language Model (VLM):
-*   **Qwen2-VL-8B-Instruct**: The best-performing open-source vision model for identification tasks.
+*   **Qwen2-VL-8B-Instruct**: The best-performing open-source vision model for identification tasks. Search term: `Qwen/Qwen2-VL-8B-Instruct-GGUF` (or use the built-in LM Studio vision models).
 
 ---
 
