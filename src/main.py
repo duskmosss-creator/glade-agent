@@ -44,6 +44,13 @@ except ImportError:
     wiki_agent = None
     print("[WikiAgent] Module not found.", flush=True)
 
+try:
+    from research_agent import ResearchAgent
+    print("[ResearchAgent] Module imported.", flush=True)
+except ImportError:
+    ResearchAgent = None
+    print("[ResearchAgent] Module not found.", flush=True)
+
 # =======================================================
 #           CONFIGURATION MANAGEMENT
 # =======================================================
@@ -559,6 +566,7 @@ OFF-GRID AGENT - COMMAND LIST
 !test : Verify agent is online.
 !info : This command list.
 !readme : Overview of agent capabilities.
+!research <query> : Run a deep online/offline research agent.
 """
 COMMANDS_MESSAGE = COMMANDS_MESSAGE.strip()
 
@@ -2373,6 +2381,24 @@ def main_listener():
                                 ai_answer = "ERROR: Recipe/video extraction has been removed from this version."
                                 print(f"[{get_timestamp()}] -> Command: !recipe (feature removed) | {ticket_id}")
                                 
+                            elif cmd.startswith("!research"):
+                                print(f"   [DEBUG] [OK] Command matched: !research")
+                                if not ResearchAgent:
+                                    ai_answer = "ERROR: Research Agent module not loaded. Check dependencies."
+                                else:
+                                    research_match = re.search(r'^!research\s*(.*)', text_prompt, re.IGNORECASE)
+                                    query = research_match.group(1).strip() if research_match else ""
+                                    if not query:
+                                        ai_answer = "Please specify a query for research.\n\nFormat: !research <query>"
+                                    else:
+                                        print(f"[{get_timestamp()}] -> Command: !research {query} | {ticket_id}")
+                                        agent = ResearchAgent(mode="DEEP", max_steps=5)
+                                        try:
+                                            ai_answer = agent.get_agent_response(query)
+                                        except Exception as e:
+                                            ai_answer = f"ERROR: Research failed - {e}"
+                                            print(f"[ERROR] Research command exception: {e}")
+
                             else:
                                 # Not a command, query AI
                                 print(f"   [DEBUG] No command matched, querying AI ({AI_BACKEND}) | {ticket_id}")
